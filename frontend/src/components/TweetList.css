@@ -1,0 +1,73 @@
+/* TweetList.css */
+
+/* Set the fixed height for the tweet card */
+.tweet-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Align items vertically */
+  height: 100%; /* Ensure it fills the height */
+}
+
+.tweet-card:hover {
+  transform: translateY(-5px);
+}
+
+.tweet-image {
+  height: 240px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the space */
+}
+
+.tweet-title {
+  font-size: 1.25rem; /* Title font size */
+  font-weight: bold; /* Bold title */
+  color: #333; /* Dark color for title */
+}
+
+.tweet-description {
+  font-size: 1rem; /* Description font size */
+  color: #555; /* Grey color for description */
+}
+
+.tweet-location {
+  font-size: 0.9rem; /* Smaller font for location */
+  color: #777; /* Light grey for location */
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 20px;
+  flex-grow: 1; /* Allow comments section to take available space */
+}
+
+.comments-title {
+  font-size: 1rem; /* Comments title font size */
+  font-weight: bold; /* Bold comments title */
+}
+
+.no-comments {
+  font-size: 0.9rem; /* Font size for no comments message */
+  color: #888; /* Grey color */
+}
+
+.comments-list {
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove padding */
+  margin-top: 10px; /* Space above comments list */
+}
+
+.comment-item {
+  background-color: #f8f9fa; /* Light background for comments */
+  padding: 8px; /* Padding around comment */
+  margin-bottom: 6px; /* Spacing between comments */
+  border-radius: 4px; /* Rounded corners for comments */
+}
+
+/* Comment Form */
+.comment-form input {
+  border-radius: 4px; /* Rounded corners for input */
+}
+
+.comment-form button {
+  float: right; /* Align button to the right */
+}

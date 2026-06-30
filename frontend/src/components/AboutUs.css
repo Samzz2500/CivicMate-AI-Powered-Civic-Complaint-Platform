@@ -1,0 +1,27 @@
+
+.about-us-container {
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-image: url(../assets/aboutus_bg.jpg); /* Optional: Add a background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.about-us-title {
+  color: #007bff; /* Custom color for the title */
+  font-size: 2rem; /* Larger font size */
+  font-weight: 700;
+}
+
+.about-us-description {
+  font-size: 1.2rem; /* Increase font size for better readability */
+  line-height: 1.5; /* Improve line spacing */
+}
+
+.about-us-mission {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 20px; /* Add margin for spacing */
+}
+

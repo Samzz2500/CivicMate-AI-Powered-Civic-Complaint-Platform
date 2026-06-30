@@ -1,0 +1,23 @@
+/* transitions.css */
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px); /* Slide effect */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms; /* Fade and slide transition */
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0); /* Start from current position */
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px); /* Slide effect while exiting */
+  transition: opacity 300ms, transform 300ms; /* Fade and slide transition */
+}

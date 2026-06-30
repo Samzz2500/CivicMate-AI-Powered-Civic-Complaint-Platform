@@ -1,0 +1,12 @@
+.privacy-policy-container {
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.privacy-policy-text {
+  font-size: 1.2rem; /* Increase font size for better readability */
+  line-height: 1.5; /* Improve line spacing */
+}
+
+

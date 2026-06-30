@@ -1,0 +1,7 @@
+drainage
+garbage
+others
+potholes
+public washroom
+streetlight
+water_leakage

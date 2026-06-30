@@ -1,0 +1,227 @@
+/* Government Navbar Styles */
+
+.gov-navbar {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.gov-navbar.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Brand Section */
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.brand-section:hover {
+  transform: scale(1.02);
+}
+
+.brand-logo {
+  position: relative;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 2px 6px rgba(30, 58, 138, 0.3);
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.brand-section:hover .logo-img {
+  transform: rotate(5deg);
+  box-shadow: 0 3px 10px rgba(30, 58, 138, 0.5);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.nav-link-custom {
+  color: var(--text-dark) !important;
+  font-weight: 600;
+  padding: 6px 14px !important;
+  margin: 0 4px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.nav-link-custom::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link-custom:hover {
+  color: var(--primary-color) !important;
+  background: rgba(30, 58, 138, 0.05);
+}
+
+.nav-link-custom:hover::before {
+  width: 70%;
+}
+
+.nav-link-custom i {
+  font-size: 0.9rem;
+}
+
+/* Auth Buttons */
+.auth-btn,
+.logout-btn {
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border-width: 2px;
+  font-size: 0.95rem;
+}
+
+.auth-btn:hover,
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary.auth-btn {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary.auth-btn:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-outline-primary.auth-btn {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary.auth-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.logout-btn {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.logout-btn:hover {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: white;
+}
+
+/* Navbar Toggle */
+.navbar-toggler {
+  border: 2px solid var(--primary-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30, 58, 138, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .gov-navbar {
+    padding: 6px 0;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-link-custom {
+    margin: 4px 0;
+    padding: 8px 14px !important;
+  }
+
+  .nav-link-custom::before {
+    display: none;
+  }
+
+  .auth-btn,
+  .logout-btn {
+    width: 100%;
+    margin: 4px 0 !important;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.55rem;
+  }
+
+  .logo-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-link-custom {
+    font-size: 0.9rem;
+  }
+
+  .auth-btn,
+  .logout-btn {
+    font-size: 0.9rem;
+  }
+}

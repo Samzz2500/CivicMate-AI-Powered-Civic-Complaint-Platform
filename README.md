@@ -1,6 +1,6 @@
 # 🏙️ CivicMate — AI-Powered Civic Complaint Platform
 
-> **Shahar Sahayya Kranti** means *"City Help Revolution"* in Hindi.  
+> **Shahar Sahayya Kranti** means *"City Help Revolution"* in Marathi.  
 > This platform lets citizens report civic problems like potholes, broken streetlights, and garbage — and actually track them getting fixed.
 
 ![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Node.js%20%7C%20MongoDB-blue)
@@ -332,7 +332,7 @@ The name *Shahar Sahayya Kranti* reflects the vision: a revolution in how cities
 
 ## 📄 License
 
-Built for academic and research purposes — IEEE ICNTE-2026.
+By TeamURBANML built for academic and research purposes — IEEE ICNTE-2026.
 
 ---
 
